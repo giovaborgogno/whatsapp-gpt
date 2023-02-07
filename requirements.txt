@@ -3,3 +3,4 @@ twilio==7.16.2
 openai==0.26.4
 python-decouple==3.7
 python-dotenv==0.21.1
+SQLAlchemy==2.0.2
