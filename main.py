@@ -1,4 +1,6 @@
 from flask import Flask, request
+import sys
+sys.path.insert(0, '/var/www/whatsapp-gpt/twilio_whatsapp')
 from twilio_whatsapp import send_message
 from db_config import engine, Session, Base, User
 
@@ -17,6 +19,6 @@ def handle_message():
     response = send_message(from_number, message)
 
     return response, 200
-
+#    return 'success', 200
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run()

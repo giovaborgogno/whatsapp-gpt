@@ -4,3 +4,4 @@ openai==0.26.4
 python-decouple==3.7
 python-dotenv==0.21.1
 SQLAlchemy==2.0.2
+psycopg2-binary==2.9.5

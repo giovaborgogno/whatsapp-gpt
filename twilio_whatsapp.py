@@ -1,7 +1,7 @@
 from twilio.rest import Client
 from decouple import config as env
 from chatgpt import ChatGPT
-from database_config import get_user_context, edit_user_text
+from db_config import get_user_context, edit_user_context
 
 chatgpt = ChatGPT()
 
