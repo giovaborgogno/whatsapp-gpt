@@ -19,6 +19,6 @@ def handle_message():
     response = send_message(from_number, message)
 
     return response, 200
-#    return 'success', 200
+
 if __name__ == "__main__":
     app.run()

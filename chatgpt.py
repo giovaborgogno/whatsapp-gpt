@@ -12,6 +12,9 @@ class ChatGPT:
     def send_prompt(self, user, prompt, context=''):
         prompt = context + self.start_prompt + prompt + self.restart_prompt
         
+        if len(prompt)>4000:
+            prompt = prompt[-4000:]
+        
         response = openai.Completion.create(
             model="text-davinci-003", 
             prompt=prompt, 
